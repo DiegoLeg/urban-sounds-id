@@ -13,4 +13,16 @@ Se presentan 3 Jupyter Notebooks diferentes.
 
 - Se divide el dataset en train y test sets, usando el 20% para test.
 
-2) Entrenamiento del modelo:
+2) Entrenamiento y Evaluación inicial del modelo:
+
+- Se elige trabajar en primer lugar con un modelo sencillo (MLP), que contiene una capa de inputs, una de outputs y una capa oculta.
+- Para las primeras 2 capas se utiliza una ReLU como función de activación, mientras que para la última capa se trabaja con Softmax, para lograr una representación de las distribuciones de probabilidad; entonces, el modelo hará sus predicciones basado en qué opción tiene mayor probabilidad.
+- Se entrena el modelo utilizando 100 Epochs.
+- Se realiza un testeo del modelo en función de su Accuracy (tanto para training-set como para test-set).
+- Se valida el mismo a partir de predecir en sample data utilizada en el primer notebook, y en audios externos a los datasets presentados.
+- El modelo MLP parece ser satisfactorio en general, generalizando de manera correcta ante nuevos datos que se le ingresan.
+
+3) Mejora del Modelo y Evaluación final del mismo:
+
+- En lugar de trabajar con un modelo MLP, se utiliza una red neuronal convolucional (CNN).
+
