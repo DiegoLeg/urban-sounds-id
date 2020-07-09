@@ -22,7 +22,13 @@ Se presentan 3 Jupyter Notebooks diferentes.
 - Se valida el mismo a partir de predecir en sample data utilizada en el primer notebook, y en audios externos a los datasets presentados.
 - El modelo MLP parece ser satisfactorio en general, generalizando de manera correcta ante nuevos datos que se le ingresan.
 
-3) Mejora del Modelo y Evaluación final del mismo:
+3) Evaluación final del modelo (CNN):
 
 - En lugar de trabajar con un modelo MLP, se utiliza una red neuronal convolucional (CNN).
+- Se trabaja con zero padding para ingresar datos de longitud fija a la red.
+- Se entrena el modelo utilizando 70 epochs.
+- Se obtiene un valor final de Accuracy de 94% para el training set y 88% para el test set (esto significa una mejora respecto del modelo anterior).
+- El modelo generaliza correctamente y predice bien contra datos nuevos que se le ingresan.
+
+Se propone mejorar el modelo para la versión 1.1, cambiando ciertos parámetros de preprocesamiento (frecuencia de sampleo, profundidad de bits, tipo de ventana) y también parámetros de la red neuronal (cantidad de nodos, dropout, funciones de activación, etc.).
 
