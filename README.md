@@ -27,7 +27,7 @@ Se presentan 3 Jupyter Notebooks diferentes.
 - En lugar de trabajar con un modelo MLP, se utiliza una red neuronal convolucional (CNN).
 - Se trabaja con zero padding para ingresar datos de longitud fija a la red.
 - Se entrena el modelo utilizando 70 epochs.
-- Se obtiene un valor final de Accuracy de 94% para el training set y 88% para el test set (esto significa una mejora respecto del modelo anterior).
+- Se obtiene un valor final de Accuracy de 94% para el training set y 89% para el test set (esto significa una mejora respecto del modelo anterior).
 - El modelo generaliza correctamente y predice bien contra datos nuevos que se le ingresan.
 
 Se propone mejorar el modelo para la versión 1.1, cambiando ciertos parámetros de preprocesamiento (frecuencia de sampleo, profundidad de bits, tipo de ventana) y también parámetros de la red neuronal (cantidad de nodos, dropout, funciones de activación, etc.).
